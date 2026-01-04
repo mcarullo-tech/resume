@@ -1,8 +1,6 @@
 %-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Resume in LaTeX
+% Cleaned & formatted for ATS and readability
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -20,26 +18,13 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -47,46 +32,34 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{{#1 \vspace{-2pt}}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small #1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -102,22 +75,16 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Matthew Carullo} \\ \vspace{1pt}
-    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{mcarullo@uwaterloo.ca}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{https://www.linkedin.com/in/matthew-carullo/}} $|$
-    % \href{https://github.com/...}{\underline{github.com/jake}}
+    \small 123-456-7890 $|$ 
+    \href{mailto:mcarullo@uwaterloo.ca}{\underline{mcarullo@uwaterloo.ca}} $|$
+    \href{https://www.linkedin.com/in/matthew-carullo/}{\underline{linkedin.com/in/matthew-carullo}} $|$
+    \href{https://github.com/}{\underline{github.com/yourusername}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -126,21 +93,20 @@
       {University of Waterloo}{Waterloo, ON}
       {Bachelor of Applied Science in Mechanical Engineering}{Sept. 2019 -- May 2024}
       \resumeItemListStart
-        \resumeItem{Academics: 4.0 GPA, Dean's Honors List}
+        \resumeItem{4.0 GPA, Dean's Honors List}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%-----------SKILLS SUMMARY-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Mechanical Design \& Analysis}{: SolidWorks, AutoCAD, GD\&T, DFM/DFA, Tooling \& Fixture Design, ANSYS} \\
+     \textbf{Manufacturing \& Prototyping}{: CNC Machining, 3D Printing, Injection Molding, Rapid Prototyping, Welding} \\
+     \textbf{Testing \& Simulation}{: FEA, DOE, SPC, Tolerance Stackup Analysis} \\
+     \textbf{Software \& Tools}{: Python, MATLAB, PLM Systems}
     }}
  \end{itemize}
-
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -148,69 +114,42 @@
 
     \resumeSubheading
       {Engineering Analyst}{Aug. 2024 -- Present}
-      {Hatch Ltd.}{mississauga, ON}
+      {Hatch Ltd.}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Developed a software platform for acoustic and ultrasonic signal processing from NDT inspections,
-          reducing analysis time by 40\% and improving defect detection accuracy by 30\%.}
-        \resumeItem{Designed, implemented, and documented process work instructions and technical reports to support
-          multi-million-dollar maintenance and reline decisions.}
-        \resumeItem{Analyzed large-scale time-frequency process data to identify efficiency improvements, driving
-          measurable reductions in downtime and operational costs.}
-        \resumeItem{Managed end-to-end execution of 20+ industrial inspection campaigns across global sites, ensuring
-          on-time delivery under challenging plant conditions.}
+        \resumeItem{Developed a software platform for acoustic and ultrasonic signal processing from NDT inspections, reducing analysis time by 40\% and improving defect detection accuracy by 30\%.}
+        \resumeItem{Created process work instructions and technical reports supporting multi-million-dollar maintenance and reline decisions.}
+        \resumeItem{Analyzed large-scale time-frequency process data to identify efficiency improvements, reducing downtime and operational costs.}
+        \resumeItem{Managed end-to-end execution of 20+ industrial inspection campaigns across global sites under challenging plant conditions.}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
-      {Mechanical Design Engineer}{May. 2023 -- Aug. 2023}
+      {Mechanical Design Engineer}{May 2023 -- Aug. 2023}
       {Tesla Toronto Automation}{Markham, ON}
       \resumeItemListStart
-        \resumeItem{Designed and implemented upgraded powertrain systems for high-speed automated lithium-ion cell
-          assembly machinery to enhance precision and reliability.}
-        \resumeItem{Led tooling and fixture modifications for mechanical sealing systems, conducting statistical quality
-          control studies to validate performance.}
-        \resumeItem{Collaborated cross-functionally to integrate equipment upgrades into existing manufacturing lines,
-          minimizing downtime during transition.}
-    \resumeItemListEnd
+        \resumeItem{Designed and implemented upgraded powertrain systems for high-speed automated lithium-ion cell assembly machinery.}
+        \resumeItem{Led tooling and fixture modifications for mechanical sealing systems, conducting statistical quality control studies.}
+        \resumeItem{Collaborated cross-functionally to integrate equipment upgrades into existing manufacturing lines with minimal downtime.}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Product Design Engineer}{Sept. 2022 -- Dec. 2022}
       {Tesla Inc.}{Palo Alto, CA}
       \resumeItemListStart
-        \resumeItem{Designed 3D-printable tooling components to safeguard critical Semi-truck electronics, preventing
-          potential \$25M+ in damage during product launch.}
-        \resumeItem{Reviewed new process/equipment designs for manufacturability and robustness, working closely with
-          mechanical development teams to ensure seamless transition to production.}
-        \resumeItem{Created assembly tools and fixtures for supercomputer cabinet manufacturing, improving production
-          ergonomics and throughput.}
+        \resumeItem{Designed 3D-printable tooling to safeguard critical Semi-truck electronics, preventing potential \$25M+ in damage during launch.}
+        \resumeItem{Reviewed new process and equipment designs for manufacturability and robustness.}
+        \resumeItem{Created assembly tools and fixtures for supercomputer cabinet manufacturing, improving ergonomics and throughput.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Process Optimization Engineer}{Jan. 2022 -- Apr. 2022}
       {Tesla Inc.}{Fremont, CA}
       \resumeItemListStart
-        \resumeItem{Spearheaded process validation and optimization of laser welding systems, improving yield from 92\%
-          to 99.8\% through structured data analysis and equipment tuning.}
-        \resumeItem{Developed and implemented enhanced vision system leveraging machine learning to improve defect
-          detection in lithium-ion cell welds.}
-        \resumeItem{Coordinated with operations and quality teams to introduce off-line inspection points and SOPs,
-          increasing product quality while reducing rework.}
+        \resumeItem{Optimized laser welding systems, improving yield from 92\% to 99.8\% through structured data analysis and equipment tuning.}
+        \resumeItem{Developed an enhanced vision system leveraging machine learning to improve defect detection in lithium-ion cell welds.}
+        \resumeItem{Introduced off-line inspection points and SOPs, increasing product quality while reducing rework.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-
-
 
 %-------------------------------------------
 \end{document}
