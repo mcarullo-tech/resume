@@ -1,5 +1,5 @@
 %-------------------------
-% Resume in LaTeX — Cleaned, Tightened, STAR-Optimized, Dot Bullets
+% Resume in LaTeX — Matches PDF Content Exactly
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -34,10 +34,10 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Bullet style: solid round dots
+% Bullet style
 \setlist[itemize]{label=\textbullet, leftmargin=0.2in}
 
-% Tighten spacing globally
+% Tight spacing
 \setlength{\parskip}{0pt}
 \setlength{\itemsep}{2pt}
 
@@ -49,10 +49,7 @@
 \pdfgentounicode=1
 
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{#1}
-}
-
+\newcommand{\resumeItem}[1]{\item\small{#1}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -60,7 +57,6 @@
       \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-6pt}
 }
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
@@ -80,25 +76,26 @@
     \href{https://github.com/mcarullo-tech}{github.com/mcarullo-tech}
 \end{center}
 
+
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
   \resumeSubheading
     {University of Waterloo}{Waterloo, ON}
-    {Bachelor of Applied Science in Mechanical Engineering}{Sept. 2019 -- May 2024}
+    {Bachelor of Applied Science, Mechanical Engineering}{May 2024}
     \resumeItemListStart
-      \resumeItem{4.0 GPA, Dean's Honors List}
+      \resumeItem{Academics: 4.0 GPA, Dean's Honors List}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
+%-----------SKILLS-----------
+\section{Skills Summary}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Mechanical Design:} SolidWorks, AutoCAD, GD\&T, DFM/DFA, Tooling \& Fixture Design, ANSYS \\
-    \textbf{Manufacturing:} CNC Machining, 3D Printing, Injection Molding, Rapid Prototyping \\
-    \textbf{Analysis \& Testing:} FEA, DOE, SPC, Tolerance Stackup Analysis \\
-    \textbf{Software:} Python, MATLAB, PLM Systems
+    \textbf{Mechanical Design \& Analysis:} SolidWorks, AutoCAD, GD\&T, DFM/DFA, Tooling \& Fixture Design, ANSYS \\
+    \textbf{Manufacturing \& Prototyping:} CNC Machining, 3D Printing, Injection Molding, Rapid Prototyping, Welding \\
+    \textbf{Testing \& Simulation:} FEA, Design of Experiments, Statistical Tolerance Analysis \\
+    \textbf{Software \& Tools:} Python, MATLAB, PLM Systems
   }}
 \end{itemize}
 
@@ -108,43 +105,42 @@
 
   % HATCH
   \resumeSubheading
-    {Engineering Analyst}{Aug. 2024 -- Present}
+    {Mechanical Engineer}{Aug 2024 -- Present}
     {Hatch Ltd.}{Mississauga, ON}
     \resumeItemListStart
-      \resumeItem{Built a Python-based platform for acoustic and ultrasonic NDT signal processing, reducing analysis time by \textbf{40\%} and improving defect-detection accuracy by \textbf{30\%}.}
-      \resumeItem{Authored technical reports and process instructions informing \textbf{multi-million-dollar} maintenance and reline decisions across global industrial clients.}
-      \resumeItem{Analyzed large-scale time–frequency datasets to identify process inefficiencies, driving measurable reductions in downtime and operational cost.}
-      \resumeItem{Led end-to-end execution of \textbf{20+} industrial inspection campaigns across international sites, coordinating logistics, data workflows, and client deliverables.}
+      \resumeItem{Developed a software platform for acoustic and ultrasonic signal processing from NDT inspections, reducing analysis time by 40\% and improving defect detection accuracy by 30\%.}
+      \resumeItem{Led a research initiative on robotic solutions to automate data collection in common NDT methods, cutting manual intervention by 50\% and advancing precision in hazardous environments.}
+      \resumeItem{Managed client relationships across international sites, coordinating on-site inspections and delivering high-impact technical presentations to senior stakeholders.}
+      \resumeItem{Oversaw multiple NDT campaign inspections as project lead, traveling to domestic and international client facilities to ensure compliance, optimize workflows, and resolve technical challenges in real time.}
     \resumeItemListEnd
 
   % TESLA TORONTO
   \resumeSubheading
-    {Mechanical Design Engineer}{May 2023 -- Aug. 2023}
+    {Mechanical Design Engineer}{May 2023 -- Aug 2023}
     {Tesla Toronto Automation}{Markham, ON}
     \resumeItemListStart
-      \resumeItem{Designed upgraded powertrain assemblies for high-speed lithium-ion cell automation equipment, improving mechanical precision and long-term reliability.}
-      \resumeItem{Delivered tooling and fixture redesigns for sealing systems, validating improvements through structured statistical quality control.}
-      \resumeItem{Collaborated with controls, manufacturing, and quality teams to integrate equipment upgrades into live production lines with minimal downtime.}
+      \resumeItem{Initiated and executed design improvements on high-speed lithium-ion cell manufacturing equipment, leveraging engineering drawings and PLM systems to implement changes across multiple automation platforms.}
+      \resumeItem{Identified excessive backlash and noise in a widely used infeed gearbox, leading to a redesign and upgrade that improved powertrain accuracy and reduced cycle time variability up to 20\%.}
+      \resumeItem{Designed a custom inspection tool for in-line process improvement studies on mechanical sealing machinery, enabling real-time seal validation and supporting a 25\% boost in quality assurance throughput.}
     \resumeItemListEnd
 
   % TESLA PALO ALTO
   \resumeSubheading
-    {Product Design Engineer}{Sept. 2022 -- Dec. 2022}
+    {Product Design Engineer}{Sept 2022 -- Dec 2022}
     {Tesla Inc.}{Palo Alto, CA}
     \resumeItemListStart
-      \resumeItem{Designed 3D-printable protective tooling for Semi-truck electronics, preventing \textbf{\$25M+} in potential launch-critical hardware damage.}
-      \resumeItem{Evaluated new process and equipment designs for manufacturability, robustness, and failure-mode resilience.}
-      \resumeItem{Developed assembly tools and fixtures for supercomputer cabinet manufacturing, improving ergonomics and increasing throughput.}
+      \resumeItem{Conducted a detailed analysis of Semi-truck cabin interiors to identify potential water ingress points threatening critical electronics, informing design changes ahead of product launch.}
+      \resumeItem{Designed and implemented a 3D-printable drip guard to protect critical electrical components from water ingress, preventing potential damage of \$600K across 50 Semi trucks during initial launch. In parallel, conducted DFM for an injection-molded counterpart to support scalable production in future builds.}
     \resumeItemListEnd
 
   % TESLA FREMONT
   \resumeSubheading
-    {Process Optimization Engineer}{Jan. 2022 -- Apr. 2022}
+    {Manufacturing Engineer}{Jan 2022 -- Apr 2022}
     {Tesla Inc.}{Fremont, CA}
     \resumeItemListStart
-      \resumeItem{Optimized laser-welding systems by analyzing weld signatures and tuning parameters, raising yield from \textbf{92\% → 99.8\%}.}
-      \resumeItem{Built a machine-learning–enhanced vision system to detect weld defects, improving detection sensitivity and reducing false negatives.}
-      \resumeItem{Introduced offline inspection workflows and SOPs that improved quality consistency while reducing rework and scrap.}
+      \resumeItem{Led process improvement studies on laser welding systems used in lithium-ion cell assembly, increasing machine yield from 92\% to 99.8\% through targeted validation and equipment optimization.}
+      \resumeItem{Implemented diversified off-line quality control measures across key stages of the assembly line, improving defect detection and ensuring production parts met specification.}
+      \resumeItem{Initiated development of a more robust vision system within laser welding equipment, leveraging machine learning (ML) to more accurately identify and reject poorly welded cells.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
