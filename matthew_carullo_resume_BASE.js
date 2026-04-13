@@ -178,6 +178,6 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buffer => {
-  fs.writeFileSync("/mnt/user-data/outputs/Matthew_Carullo_Resume.docx", buffer);
+  fs.writeFileSync("Matthew_Carullo_Resume.docx", buffer);
   console.log("Done");
 });
